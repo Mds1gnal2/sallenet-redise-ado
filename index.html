@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="es" xml:lang="es">
+  <head>
+    <title>Entrar al sitio | Palencia</title>
+    <link
+      rel="shortcut icon"
+      href="https://lasallepalencia.sallenet.org/theme/image.php/sallenetboost/theme/1732120577/favicon"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="moodle, Entrar al sitio | Palencia" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://lasallepalencia.sallenet.org/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css"
+    />
+    <script id="firstthemesheet" type="text/css">
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://lasallepalencia.sallenet.org/theme/styles.php/sallenetboost/1732120577_1732063568/all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://lasallepalencia.sallenet.org/course/format/onetopic/styles.php"
+    />
+    <script>
+      //<![CDATA[
+      var M = {};
+      M.yui = {};
+      M.pageloadstarttime = new Date();
+      M.cfg = {
+        wwwroot: "https:\/\/lasallepalencia.sallenet.org",
+        homeurl: {},
+        sesskey: "NyIRWeCACe",
+        sessiontimeout: "7200",
+        sessiontimeoutwarning: 1200,
+        themerev: "1732120577",
+        slasharguments: 1,
+        theme: "sallenetboost",
+        iconsystemmodule: "core\/icon_system_fontawesome",
+        jsrev: "1732120578",
+        admin: "admin",
+        svgicons: true,
+        usertimezone: "Europa\/Berl\u00edn",
+        language: "es",
+        courseId: 1,
+        courseContextId: 2,
+        contextid: 1,
+        contextInstanceId: 0,
+        langrev: 1732120578,
+        templaterev: "1732120578",
+      };
+      var yui1ConfigFn = function (me) {
+        if (/-skin|reset|fonts|grids|base/.test(me.name)) {
+          me.type = "css";
+          me.path = me.path.replace(/\.js/, ".css");
+          me.path = me.path.replace(
+            /\/yui2-skin/,
+            "/assets/skins/sam/yui2-skin"
+          );
+        }
+      };
+      var yui2ConfigFn = function (me) {
+        var parts = me.name.replace(/^moodle-/, "").split("-"),
+          component = parts.shift(),
+          module = parts[0],
+          min = "-min";
+        if (/-(skin|core)$/.test(me.name)) {
+          parts.pop();
+          me.type = "css";
+          min = "";
+        }
+        if (module) {
+          var filename = parts.join("-");
+          me.path =
+            component + "/" + module + "/" + filename + min + "." + me.type;
+        } else {
+          me.path = component + "/" + component + "." + me.type;
+        }
+      };
+      YUI_config = {
+        debug: false,
+        base: "https:\/\/lasallepalencia.sallenet.org\/lib\/yuilib\/3.17.2\/",
+        comboBase:
+          "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?",
+        combine: true,
+        filter: null,
+        insertBefore: "firstthemesheet",
+        groups: {
+          yui2: {
+            base: "https:\/\/lasallepalencia.sallenet.org\/lib\/yuilib\/2in3\/2.9.0\/build\/",
+            comboBase:
+              "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?",
+            combine: true,
+            ext: false,
+            root: "2in3\/2.9.0\/build\/",
+            patterns: { "yui2-": { group: "yui2", configFn: yui1ConfigFn } },
+          },
+          moodle: {
+            name: "moodle",
+            base: "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?m\/1732120578\/",
+            combine: true,
+            comboBase:
+              "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?",
+            ext: false,
+            root: "m\/1732120578\/",
+            patterns: {
+              "moodle-": { group: "moodle", configFn: yui2ConfigFn },
+            },
+            filter: null,
+            modules: {
+              "moodle-core-actionmenu": {
+                requires: ["base", "event", "node-event-simulate"],
+              },
+              "moodle-core-popuphelp": { requires: ["moodle-core-tooltip"] },
+              "moodle-core-dragdrop": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "event-key",
+                  "event-focus",
+                  "moodle-core-notification",
+                ],
+              },
+              "moodle-core-maintenancemodetimer": {
+                requires: ["base", "node"],
+              },
+              "moodle-core-tooltip": {
+                requires: [
+                  "base",
+                  "node",
+                  "io-base",
+                  "moodle-core-notification-dialogue",
+                  "json-parse",
+                  "widget-position",
+                  "widget-position-align",
+                  "event-outside",
+                  "cache-base",
+                ],
+              },
+              "moodle-core-lockscroll": { requires: ["plugin", "base-build"] },
+              "moodle-core-formchangechecker": {
+                requires: ["base", "event-focus", "moodle-core-event"],
+              },
+              "moodle-core-event": { requires: ["event-custom"] },
+              "moodle-core-notification": {
+                requires: [
+                  "moodle-core-notification-dialogue",
+                  "moodle-core-notification-alert",
+                  "moodle-core-notification-confirm",
+                  "moodle-core-notification-exception",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-core-notification-dialogue": {
+                requires: [
+                  "base",
+                  "node",
+                  "panel",
+                  "escape",
+                  "event-key",
+                  "dd-plugin",
+                  "moodle-core-widget-focusafterclose",
+                  "moodle-core-lockscroll",
+                ],
+              },
+              "moodle-core-notification-alert": {
+                requires: ["moodle-core-notification-dialogue"],
+              },
+              "moodle-core-notification-confirm": {
+                requires: ["moodle-core-notification-dialogue"],
+              },
+              "moodle-core-notification-exception": {
+                requires: ["moodle-core-notification-dialogue"],
+              },
+              "moodle-core-notification-ajaxexception": {
+                requires: ["moodle-core-notification-dialogue"],
+              },
+              "moodle-core-handlebars": {
+                condition: { trigger: "handlebars", when: "after" },
+              },
+              "moodle-core-blocks": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "dd-scroll",
+                  "moodle-core-dragdrop",
+                  "moodle-core-notification",
+                ],
+              },
+              "moodle-core-languninstallconfirm": {
+                requires: [
+                  "base",
+                  "node",
+                  "moodle-core-notification-confirm",
+                  "moodle-core-notification-alert",
+                ],
+              },
+              "moodle-core-chooserdialogue": {
+                requires: ["base", "panel", "moodle-core-notification"],
+              },
+              "moodle-core_availability-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-delegate",
+                  "panel",
+                  "moodle-core-notification-dialogue",
+                  "json",
+                ],
+              },
+              "moodle-backup-backupselectall": {
+                requires: ["node", "event", "node-event-simulate", "anim"],
+              },
+              "moodle-backup-confirmcancel": {
+                requires: [
+                  "node",
+                  "node-event-simulate",
+                  "moodle-core-notification-confirm",
+                ],
+              },
+              "moodle-course-dragdrop": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "dd-scroll",
+                  "moodle-core-dragdrop",
+                  "moodle-core-notification",
+                  "moodle-course-coursebase",
+                  "moodle-course-util",
+                ],
+              },
+              "moodle-course-util": {
+                requires: ["node"],
+                use: ["moodle-course-util-base"],
+                submodules: {
+                  "moodle-course-util-base": {},
+                  "moodle-course-util-section": {
+                    requires: ["node", "moodle-course-util-base"],
+                  },
+                  "moodle-course-util-cm": {
+                    requires: ["node", "moodle-course-util-base"],
+                  },
+                },
+              },
+              "moodle-course-categoryexpander": {
+                requires: ["node", "event-key"],
+              },
+              "moodle-course-management": {
+                requires: [
+                  "base",
+                  "node",
+                  "io-base",
+                  "moodle-core-notification-exception",
+                  "json-parse",
+                  "dd-constrain",
+                  "dd-proxy",
+                  "dd-drop",
+                  "dd-delegate",
+                  "node-event-delegate",
+                ],
+              },
+              "moodle-form-shortforms": {
+                requires: [
+                  "node",
+                  "base",
+                  "selector-css3",
+                  "moodle-core-event",
+                ],
+              },
+              "moodle-form-passwordunmask": { requires: [] },
+              "moodle-form-dateselector": {
+                requires: ["base", "node", "overlay", "calendar"],
+              },
+              "moodle-question-preview": {
+                requires: [
+                  "base",
+                  "dom",
+                  "event-delegate",
+                  "event-key",
+                  "core_question_engine",
+                ],
+              },
+              "moodle-question-chooser": {
+                requires: ["moodle-core-chooserdialogue"],
+              },
+              "moodle-question-searchform": { requires: ["base", "node"] },
+              "moodle-availability_completion-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_date-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "io",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_grade-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_group-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_grouping-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_language-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "node-event-simulate",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_profile-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-qtype_musictheory-musictheoryui": {
+                requires: ["base", "node", "datatype", "panel", "dd-plugin"],
+              },
+              "moodle-qtype_musictheory-musictheoryqtype": {
+                requires: ["base", "node", "datatype", "node-event-simulate"],
+              },
+              "moodle-qtype_musictheory-musictheorykeyboardui": {
+                requires: ["base", "node", "datatype"],
+              },
+              "moodle-mod_assign-history": { requires: ["node", "transition"] },
+              "moodle-mod_offlinequiz-dragdrop": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "dd-scroll",
+                  "moodle-core-dragdrop",
+                  "moodle-core-notification",
+                  "moodle-mod_offlinequiz-offlinequizbase",
+                  "moodle-mod_offlinequiz-util-base",
+                  "moodle-mod_offlinequiz-util-page",
+                  "moodle-mod_offlinequiz-util-slot",
+                  "moodle-course-util",
+                ],
+              },
+              "moodle-mod_offlinequiz-util": {
+                requires: ["node"],
+                use: ["moodle-mod_offlinequiz-util-base"],
+                submodules: {
+                  "moodle-mod_offlinequiz-util-base": {},
+                  "moodle-mod_offlinequiz-util-slot": {
+                    requires: ["node", "moodle-mod_offlinequiz-util-base"],
+                  },
+                  "moodle-mod_offlinequiz-util-page": {
+                    requires: ["node", "moodle-mod_offlinequiz-util-base"],
+                  },
+                },
+              },
+              "moodle-mod_offlinequiz-offlinequizquestionbank": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "io-form",
+                  "yui-later",
+                  "moodle-question-qbankmanager",
+                  "moodle-qbank_editquestion-chooser",
+                  "moodle-question-searchform",
+                  "moodle-core-notification",
+                ],
+              },
+              "moodle-mod_offlinequiz-modform": {
+                requires: ["base", "node", "event"],
+              },
+              "moodle-mod_offlinequiz-autosave": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-valuechange",
+                  "node-event-delegate",
+                  "io-form",
+                ],
+              },
+              "moodle-mod_offlinequiz-randomquestion": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "moodle-core-notification-dialogue",
+                ],
+              },
+              "moodle-mod_offlinequiz-repaginate": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "moodle-core-notification-dialogue",
+                ],
+              },
+              "moodle-mod_offlinequiz-offlinequizbase": {
+                requires: ["base", "node"],
+              },
+              "moodle-mod_offlinequiz-questionchooser": {
+                requires: [
+                  "moodle-core-chooserdialogue",
+                  "moodle-mod_offlinequiz-util",
+                  "querystring-parse",
+                ],
+              },
+              "moodle-mod_offlinequiz-toolboxes": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-key",
+                  "io",
+                  "moodle-mod_offlinequiz-offlinequizbase",
+                  "moodle-mod_offlinequiz-util-slot",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-mod_quiz-dragdrop": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "dd-scroll",
+                  "moodle-core-dragdrop",
+                  "moodle-core-notification",
+                  "moodle-mod_quiz-quizbase",
+                  "moodle-mod_quiz-util-base",
+                  "moodle-mod_quiz-util-page",
+                  "moodle-mod_quiz-util-slot",
+                  "moodle-course-util",
+                ],
+              },
+              "moodle-mod_quiz-util": {
+                requires: ["node", "moodle-core-actionmenu"],
+                use: ["moodle-mod_quiz-util-base"],
+                submodules: {
+                  "moodle-mod_quiz-util-base": {},
+                  "moodle-mod_quiz-util-slot": {
+                    requires: ["node", "moodle-mod_quiz-util-base"],
+                  },
+                  "moodle-mod_quiz-util-page": {
+                    requires: ["node", "moodle-mod_quiz-util-base"],
+                  },
+                },
+              },
+              "moodle-mod_quiz-modform": {
+                requires: ["base", "node", "event"],
+              },
+              "moodle-mod_quiz-autosave": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-valuechange",
+                  "node-event-delegate",
+                  "io-form",
+                ],
+              },
+              "moodle-mod_quiz-quizbase": { requires: ["base", "node"] },
+              "moodle-mod_quiz-questionchooser": {
+                requires: [
+                  "moodle-core-chooserdialogue",
+                  "moodle-mod_quiz-util",
+                  "querystring-parse",
+                ],
+              },
+              "moodle-mod_quiz-toolboxes": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-key",
+                  "io",
+                  "moodle-mod_quiz-quizbase",
+                  "moodle-mod_quiz-util-slot",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-message_airnotifier-toolboxes": {
+                requires: ["base", "node", "io"],
+              },
+              "moodle-filter_glossary-autolinker": {
+                requires: [
+                  "base",
+                  "node",
+                  "io-base",
+                  "json-parse",
+                  "event-delegate",
+                  "overlay",
+                  "moodle-core-event",
+                  "moodle-core-notification-alert",
+                  "moodle-core-notification-exception",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-filter_mathjaxloader-loader": {
+                requires: ["moodle-core-event"],
+              },
+              "moodle-editor_atto-rangy": { requires: [] },
+              "moodle-editor_atto-editor": {
+                requires: [
+                  "node",
+                  "transition",
+                  "io",
+                  "overlay",
+                  "escape",
+                  "event",
+                  "event-simulate",
+                  "event-custom",
+                  "node-event-html5",
+                  "node-event-simulate",
+                  "yui-throttle",
+                  "moodle-core-notification-dialogue",
+                  "moodle-core-notification-confirm",
+                  "moodle-editor_atto-rangy",
+                  "handlebars",
+                  "timers",
+                  "querystring-stringify",
+                ],
+              },
+              "moodle-editor_atto-plugin": {
+                requires: [
+                  "node",
+                  "base",
+                  "escape",
+                  "event",
+                  "event-outside",
+                  "handlebars",
+                  "event-custom",
+                  "timers",
+                  "moodle-editor_atto-menu",
+                ],
+              },
+              "moodle-editor_atto-menu": {
+                requires: [
+                  "moodle-core-notification-dialogue",
+                  "node",
+                  "event",
+                  "event-custom",
+                ],
+              },
+              "moodle-report_eventlist-eventfilter": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "node-event-delegate",
+                  "datatable",
+                  "autocomplete",
+                  "autocomplete-filters",
+                ],
+              },
+              "moodle-report_loglive-fetchlogs": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "node-event-delegate",
+                ],
+              },
+              "moodle-gradereport_history-userselector": {
+                requires: [
+                  "escape",
+                  "event-delegate",
+                  "event-key",
+                  "handlebars",
+                  "io-base",
+                  "json-parse",
+                  "moodle-core-notification-dialogue",
+                ],
+              },
+              "moodle-qbank_editquestion-chooser": {
+                requires: ["moodle-core-chooserdialogue"],
+              },
+              "moodle-tool_capability-search": { requires: ["base", "node"] },
+              "moodle-tool_editrolesbycap-capabilityformfield": {
+                requires: ["base", "dom", "event", "cookie"],
+              },
+              "moodle-tool_lp-dragdrop-reorder": {
+                requires: ["moodle-core-dragdrop"],
+              },
+              "moodle-tool_monitor-dropdown": {
+                requires: ["base", "event", "node"],
+              },
+              "moodle-assignfeedback_editpdf-editor": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "graphics",
+                  "json",
+                  "event-move",
+                  "event-resize",
+                  "transition",
+                  "querystring-stringify-simple",
+                  "moodle-core-notification-dialog",
+                  "moodle-core-notification-alert",
+                  "moodle-core-notification-warning",
+                  "moodle-core-notification-exception",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-atto_accessibilitychecker-button": {
+                requires: ["color-base", "moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_accessibilityhelper-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_align-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_bold-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_charmap-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_chemistry-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-core-event",
+                  "io",
+                  "event-valuechange",
+                  "tabview",
+                  "array-extras",
+                ],
+              },
+              "moodle-atto_clear-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_collapse-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_emojipicker-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_emoticon-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_equation-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-core-event",
+                  "io",
+                  "event-valuechange",
+                  "tabview",
+                  "array-extras",
+                ],
+              },
+              "moodle-atto_h5p-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_html-beautify": {},
+              "moodle-atto_html-codemirror": {
+                requires: ["moodle-atto_html-codemirror-skin"],
+              },
+              "moodle-atto_html-button": {
+                requires: [
+                  "promise",
+                  "moodle-editor_atto-plugin",
+                  "moodle-atto_html-beautify",
+                  "moodle-atto_html-codemirror",
+                  "event-valuechange",
+                ],
+              },
+              "moodle-atto_image-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_indent-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_italic-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_link-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_managefiles-usedfiles": {
+                requires: ["node", "escape"],
+              },
+              "moodle-atto_managefiles-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_media-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-form-shortforms",
+                ],
+              },
+              "moodle-atto_noautolink-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_orderedlist-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_recordrtc-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-atto_recordrtc-recording",
+                ],
+              },
+              "moodle-atto_recordrtc-recording": {
+                requires: ["moodle-atto_recordrtc-button"],
+              },
+              "moodle-atto_rtl-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_strike-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_subscript-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_superscript-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_table-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-editor_atto-menu",
+                  "event",
+                  "event-valuechange",
+                ],
+              },
+              "moodle-atto_title-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_underline-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_undo-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_unorderedlist-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_wiris-button": {
+                requires: ["moodle-editor_atto-plugin", "get"],
+              },
+              "moodle-tinymce_mathslate-textool": {
+                requires: ["dd-drag", "dd-proxy", "dd-drop", "event", "json"],
+              },
+              "moodle-tinymce_mathslate-dialogue": {
+                requires: [
+                  "escape",
+                  "moodle-local_mathslate-editor",
+                  "moodle-tinymce_mathslate-editor",
+                ],
+              },
+              "moodle-tinymce_mathslate-snippeteditor": { requires: ["json"] },
+              "moodle-tinymce_mathslate-editor": {
+                requires: [
+                  "dd-drag",
+                  "dd-proxy",
+                  "dd-drop",
+                  "event",
+                  "tabview",
+                  "io-base",
+                  "json",
+                  "moodle-tinymce_mathslate-textool",
+                  "moodle-tinymce_mathslate-mathjaxeditor",
+                ],
+              },
+              "moodle-tinymce_mathslate-mathjaxeditor": {
+                requires: ["moodle-tinymce_mathslate-snippeteditor", "dd-drop"],
+              },
+            },
+          },
+          gallery: {
+            name: "gallery",
+            base: "https:\/\/lasallepalencia.sallenet.org\/lib\/yuilib\/gallery\/",
+            combine: true,
+            comboBase:
+              "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?",
+            ext: false,
+            root: "gallery\/1732120578\/",
+            patterns: { "gallery-": { group: "gallery" } },
+          },
+        },
+        modules: {
+          core_filepicker: {
+            name: "core_filepicker",
+            fullpath:
+              "https:\/\/lasallepalencia.sallenet.org\/lib\/javascript.php\/1732120578\/repository\/filepicker.js",
+            requires: [
+              "base",
+              "node",
+              "node-event-simulate",
+              "json",
+              "async-queue",
+              "io-base",
+              "io-upload-iframe",
+              "io-form",
+              "yui2-treeview",
+              "panel",
+              "cookie",
+              "datatable",
+              "datatable-sort",
+              "resize-plugin",
+              "dd-plugin",
+              "escape",
+              "moodle-core_filepicker",
+              "moodle-core-notification-dialogue",
+            ],
+          },
+          core_comment: {
+            name: "core_comment",
+            fullpath:
+              "https:\/\/lasallepalencia.sallenet.org\/lib\/javascript.php\/1732120578\/comment\/comment.js",
+            requires: [
+              "base",
+              "io-base",
+              "node",
+              "json",
+              "yui2-animation",
+              "overlay",
+              "escape",
+            ],
+          },
+          mathjax: {
+            name: "mathjax",
+            fullpath:
+              "https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured",
+          },
+        },
+      };
+      M.yui.loader = { modules: {} };
+
+      //]]>
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-68491648-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-68491648-3");
+    </script>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://lasallepalencia.sallenet.org" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://lasallepalencia.sallenet.org/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css"
+    />
+    <script id="firstthemesheet" type="text/css">
+      /** Required in order to fix style inclusion problems in IE with YUI **/
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://lasallepalencia.sallenet.org/theme/styles.php/sallenetboost/1732120577_1732063568/all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://lasallepalencia.sallenet.org/theme/styles.php/sallenetboost/1732120577_1732063568/all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://lasallepalencia.sallenet.org/course/format/onetopic/styles.php"
+    />
+    <script>
+      //<![CDATA[
+      var M = {};
+      M.yui = {};
+      M.pageloadstarttime = new Date();
+      M.cfg = {
+        wwwroot: "https:\/\/lasallepalencia.sallenet.org",
+        homeurl: {},
+        sesskey: "NyIRWeCACe",
+        sessiontimeout: "7200",
+        sessiontimeoutwarning: 1200,
+        themerev: "1732120577",
+        slasharguments: 1,
+        theme: "sallenetboost",
+        iconsystemmodule: "core\/icon_system_fontawesome",
+        jsrev: "1732120578",
+        admin: "admin",
+        svgicons: true,
+        usertimezone: "Europa\/Berl\u00edn",
+        language: "es",
+        courseId: 1,
+        courseContextId: 2,
+        contextid: 1,
+        contextInstanceId: 0,
+        langrev: 1732120578,
+        templaterev: "1732120578",
+      };
+      var yui1ConfigFn = function (me) {
+        if (/-skin|reset|fonts|grids|base/.test(me.name)) {
+          me.type = "css";
+          me.path = me.path.replace(/\.js/, ".css");
+          me.path = me.path.replace(
+            /\/yui2-skin/,
+            "/assets/skins/sam/yui2-skin"
+          );
+        }
+      };
+      var yui2ConfigFn = function (me) {
+        var parts = me.name.replace(/^moodle-/, "").split("-"),
+          component = parts.shift(),
+          module = parts[0],
+          min = "-min";
+        if (/-(skin|core)$/.test(me.name)) {
+          parts.pop();
+          me.type = "css";
+          min = "";
+        }
+        if (module) {
+          var filename = parts.join("-");
+          me.path =
+            component + "/" + module + "/" + filename + min + "." + me.type;
+        } else {
+          me.path = component + "/" + component + "." + me.type;
+        }
+      };
+      YUI_config = {
+        debug: false,
+        base: "https:\/\/lasallepalencia.sallenet.org\/lib\/yuilib\/3.17.2\/",
+        comboBase:
+          "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?",
+        combine: true,
+        filter: null,
+        insertBefore: "firstthemesheet",
+        groups: {
+          yui2: {
+            base: "https:\/\/lasallepalencia.sallenet.org\/lib\/yuilib\/2in3\/2.9.0\/build\/",
+            comboBase:
+              "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?",
+            combine: true,
+            ext: false,
+            root: "2in3\/2.9.0\/build\/",
+            patterns: { "yui2-": { group: "yui2", configFn: yui1ConfigFn } },
+          },
+          moodle: {
+            name: "moodle",
+            base: "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?m\/1732120578\/",
+            combine: true,
+            comboBase:
+              "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?",
+            ext: false,
+            root: "m\/1732120578\/",
+            patterns: {
+              "moodle-": { group: "moodle", configFn: yui2ConfigFn },
+            },
+            filter: null,
+            modules: {
+              "moodle-core-actionmenu": {
+                requires: ["base", "event", "node-event-simulate"],
+              },
+              "moodle-core-popuphelp": { requires: ["moodle-core-tooltip"] },
+              "moodle-core-dragdrop": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "event-key",
+                  "event-focus",
+                  "moodle-core-notification",
+                ],
+              },
+              "moodle-core-maintenancemodetimer": {
+                requires: ["base", "node"],
+              },
+              "moodle-core-tooltip": {
+                requires: [
+                  "base",
+                  "node",
+                  "io-base",
+                  "moodle-core-notification-dialogue",
+                  "json-parse",
+                  "widget-position",
+                  "widget-position-align",
+                  "event-outside",
+                  "cache-base",
+                ],
+              },
+              "moodle-core-lockscroll": { requires: ["plugin", "base-build"] },
+              "moodle-core-formchangechecker": {
+                requires: ["base", "event-focus", "moodle-core-event"],
+              },
+              "moodle-core-event": { requires: ["event-custom"] },
+              "moodle-core-notification": {
+                requires: [
+                  "moodle-core-notification-dialogue",
+                  "moodle-core-notification-alert",
+                  "moodle-core-notification-confirm",
+                  "moodle-core-notification-exception",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-core-notification-dialogue": {
+                requires: [
+                  "base",
+                  "node",
+                  "panel",
+                  "escape",
+                  "event-key",
+                  "dd-plugin",
+                  "moodle-core-widget-focusafterclose",
+                  "moodle-core-lockscroll",
+                ],
+              },
+              "moodle-core-notification-alert": {
+                requires: ["moodle-core-notification-dialogue"],
+              },
+              "moodle-core-notification-confirm": {
+                requires: ["moodle-core-notification-dialogue"],
+              },
+              "moodle-core-notification-exception": {
+                requires: ["moodle-core-notification-dialogue"],
+              },
+              "moodle-core-notification-ajaxexception": {
+                requires: ["moodle-core-notification-dialogue"],
+              },
+              "moodle-core-handlebars": {
+                condition: { trigger: "handlebars", when: "after" },
+              },
+              "moodle-core-blocks": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "dd-scroll",
+                  "moodle-core-dragdrop",
+                  "moodle-core-notification",
+                ],
+              },
+              "moodle-core-languninstallconfirm": {
+                requires: [
+                  "base",
+                  "node",
+                  "moodle-core-notification-confirm",
+                  "moodle-core-notification-alert",
+                ],
+              },
+              "moodle-core-chooserdialogue": {
+                requires: ["base", "panel", "moodle-core-notification"],
+              },
+              "moodle-core_availability-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-delegate",
+                  "panel",
+                  "moodle-core-notification-dialogue",
+                  "json",
+                ],
+              },
+              "moodle-backup-backupselectall": {
+                requires: ["node", "event", "node-event-simulate", "anim"],
+              },
+              "moodle-backup-confirmcancel": {
+                requires: [
+                  "node",
+                  "node-event-simulate",
+                  "moodle-core-notification-confirm",
+                ],
+              },
+              "moodle-course-dragdrop": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "dd-scroll",
+                  "moodle-core-dragdrop",
+                  "moodle-core-notification",
+                  "moodle-course-coursebase",
+                  "moodle-course-util",
+                ],
+              },
+              "moodle-course-util": {
+                requires: ["node"],
+                use: ["moodle-course-util-base"],
+                submodules: {
+                  "moodle-course-util-base": {},
+                  "moodle-course-util-section": {
+                    requires: ["node", "moodle-course-util-base"],
+                  },
+                  "moodle-course-util-cm": {
+                    requires: ["node", "moodle-course-util-base"],
+                  },
+                },
+              },
+              "moodle-course-categoryexpander": {
+                requires: ["node", "event-key"],
+              },
+              "moodle-course-management": {
+                requires: [
+                  "base",
+                  "node",
+                  "io-base",
+                  "moodle-core-notification-exception",
+                  "json-parse",
+                  "dd-constrain",
+                  "dd-proxy",
+                  "dd-drop",
+                  "dd-delegate",
+                  "node-event-delegate",
+                ],
+              },
+              "moodle-form-shortforms": {
+                requires: [
+                  "node",
+                  "base",
+                  "selector-css3",
+                  "moodle-core-event",
+                ],
+              },
+              "moodle-form-passwordunmask": { requires: [] },
+              "moodle-form-dateselector": {
+                requires: ["base", "node", "overlay", "calendar"],
+              },
+              "moodle-question-preview": {
+                requires: [
+                  "base",
+                  "dom",
+                  "event-delegate",
+                  "event-key",
+                  "core_question_engine",
+                ],
+              },
+              "moodle-question-chooser": {
+                requires: ["moodle-core-chooserdialogue"],
+              },
+              "moodle-question-searchform": { requires: ["base", "node"] },
+              "moodle-availability_completion-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_date-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "io",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_grade-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_group-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_grouping-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_language-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "node-event-simulate",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-availability_profile-form": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "moodle-core_availability-form",
+                ],
+              },
+              "moodle-qtype_musictheory-musictheoryui": {
+                requires: ["base", "node", "datatype", "panel", "dd-plugin"],
+              },
+              "moodle-qtype_musictheory-musictheoryqtype": {
+                requires: ["base", "node", "datatype", "node-event-simulate"],
+              },
+              "moodle-qtype_musictheory-musictheorykeyboardui": {
+                requires: ["base", "node", "datatype"],
+              },
+              "moodle-mod_assign-history": { requires: ["node", "transition"] },
+              "moodle-mod_offlinequiz-dragdrop": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "dd-scroll",
+                  "moodle-core-dragdrop",
+                  "moodle-core-notification",
+                  "moodle-mod_offlinequiz-offlinequizbase",
+                  "moodle-mod_offlinequiz-util-base",
+                  "moodle-mod_offlinequiz-util-page",
+                  "moodle-mod_offlinequiz-util-slot",
+                  "moodle-course-util",
+                ],
+              },
+              "moodle-mod_offlinequiz-util": {
+                requires: ["node"],
+                use: ["moodle-mod_offlinequiz-util-base"],
+                submodules: {
+                  "moodle-mod_offlinequiz-util-base": {},
+                  "moodle-mod_offlinequiz-util-slot": {
+                    requires: ["node", "moodle-mod_offlinequiz-util-base"],
+                  },
+                  "moodle-mod_offlinequiz-util-page": {
+                    requires: ["node", "moodle-mod_offlinequiz-util-base"],
+                  },
+                },
+              },
+              "moodle-mod_offlinequiz-offlinequizquestionbank": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "io-form",
+                  "yui-later",
+                  "moodle-question-qbankmanager",
+                  "moodle-qbank_editquestion-chooser",
+                  "moodle-question-searchform",
+                  "moodle-core-notification",
+                ],
+              },
+              "moodle-mod_offlinequiz-modform": {
+                requires: ["base", "node", "event"],
+              },
+              "moodle-mod_offlinequiz-autosave": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-valuechange",
+                  "node-event-delegate",
+                  "io-form",
+                ],
+              },
+              "moodle-mod_offlinequiz-randomquestion": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "moodle-core-notification-dialogue",
+                ],
+              },
+              "moodle-mod_offlinequiz-repaginate": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "moodle-core-notification-dialogue",
+                ],
+              },
+              "moodle-mod_offlinequiz-offlinequizbase": {
+                requires: ["base", "node"],
+              },
+              "moodle-mod_offlinequiz-questionchooser": {
+                requires: [
+                  "moodle-core-chooserdialogue",
+                  "moodle-mod_offlinequiz-util",
+                  "querystring-parse",
+                ],
+              },
+              "moodle-mod_offlinequiz-toolboxes": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-key",
+                  "io",
+                  "moodle-mod_offlinequiz-offlinequizbase",
+                  "moodle-mod_offlinequiz-util-slot",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-mod_quiz-dragdrop": {
+                requires: [
+                  "base",
+                  "node",
+                  "io",
+                  "dom",
+                  "dd",
+                  "dd-scroll",
+                  "moodle-core-dragdrop",
+                  "moodle-core-notification",
+                  "moodle-mod_quiz-quizbase",
+                  "moodle-mod_quiz-util-base",
+                  "moodle-mod_quiz-util-page",
+                  "moodle-mod_quiz-util-slot",
+                  "moodle-course-util",
+                ],
+              },
+              "moodle-mod_quiz-util": {
+                requires: ["node", "moodle-core-actionmenu"],
+                use: ["moodle-mod_quiz-util-base"],
+                submodules: {
+                  "moodle-mod_quiz-util-base": {},
+                  "moodle-mod_quiz-util-slot": {
+                    requires: ["node", "moodle-mod_quiz-util-base"],
+                  },
+                  "moodle-mod_quiz-util-page": {
+                    requires: ["node", "moodle-mod_quiz-util-base"],
+                  },
+                },
+              },
+              "moodle-mod_quiz-modform": {
+                requires: ["base", "node", "event"],
+              },
+              "moodle-mod_quiz-autosave": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-valuechange",
+                  "node-event-delegate",
+                  "io-form",
+                ],
+              },
+              "moodle-mod_quiz-quizbase": { requires: ["base", "node"] },
+              "moodle-mod_quiz-questionchooser": {
+                requires: [
+                  "moodle-core-chooserdialogue",
+                  "moodle-mod_quiz-util",
+                  "querystring-parse",
+                ],
+              },
+              "moodle-mod_quiz-toolboxes": {
+                requires: [
+                  "base",
+                  "node",
+                  "event",
+                  "event-key",
+                  "io",
+                  "moodle-mod_quiz-quizbase",
+                  "moodle-mod_quiz-util-slot",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-message_airnotifier-toolboxes": {
+                requires: ["base", "node", "io"],
+              },
+              "moodle-filter_glossary-autolinker": {
+                requires: [
+                  "base",
+                  "node",
+                  "io-base",
+                  "json-parse",
+                  "event-delegate",
+                  "overlay",
+                  "moodle-core-event",
+                  "moodle-core-notification-alert",
+                  "moodle-core-notification-exception",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-filter_mathjaxloader-loader": {
+                requires: ["moodle-core-event"],
+              },
+              "moodle-editor_atto-rangy": { requires: [] },
+              "moodle-editor_atto-editor": {
+                requires: [
+                  "node",
+                  "transition",
+                  "io",
+                  "overlay",
+                  "escape",
+                  "event",
+                  "event-simulate",
+                  "event-custom",
+                  "node-event-html5",
+                  "node-event-simulate",
+                  "yui-throttle",
+                  "moodle-core-notification-dialogue",
+                  "moodle-core-notification-confirm",
+                  "moodle-editor_atto-rangy",
+                  "handlebars",
+                  "timers",
+                  "querystring-stringify",
+                ],
+              },
+              "moodle-editor_atto-plugin": {
+                requires: [
+                  "node",
+                  "base",
+                  "escape",
+                  "event",
+                  "event-outside",
+                  "handlebars",
+                  "event-custom",
+                  "timers",
+                  "moodle-editor_atto-menu",
+                ],
+              },
+              "moodle-editor_atto-menu": {
+                requires: [
+                  "moodle-core-notification-dialogue",
+                  "node",
+                  "event",
+                  "event-custom",
+                ],
+              },
+              "moodle-report_eventlist-eventfilter": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "node-event-delegate",
+                  "datatable",
+                  "autocomplete",
+                  "autocomplete-filters",
+                ],
+              },
+              "moodle-report_loglive-fetchlogs": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "node-event-delegate",
+                ],
+              },
+              "moodle-gradereport_history-userselector": {
+                requires: [
+                  "escape",
+                  "event-delegate",
+                  "event-key",
+                  "handlebars",
+                  "io-base",
+                  "json-parse",
+                  "moodle-core-notification-dialogue",
+                ],
+              },
+              "moodle-qbank_editquestion-chooser": {
+                requires: ["moodle-core-chooserdialogue"],
+              },
+              "moodle-tool_capability-search": { requires: ["base", "node"] },
+              "moodle-tool_editrolesbycap-capabilityformfield": {
+                requires: ["base", "dom", "event", "cookie"],
+              },
+              "moodle-tool_lp-dragdrop-reorder": {
+                requires: ["moodle-core-dragdrop"],
+              },
+              "moodle-tool_monitor-dropdown": {
+                requires: ["base", "event", "node"],
+              },
+              "moodle-assignfeedback_editpdf-editor": {
+                requires: [
+                  "base",
+                  "event",
+                  "node",
+                  "io",
+                  "graphics",
+                  "json",
+                  "event-move",
+                  "event-resize",
+                  "transition",
+                  "querystring-stringify-simple",
+                  "moodle-core-notification-dialog",
+                  "moodle-core-notification-alert",
+                  "moodle-core-notification-warning",
+                  "moodle-core-notification-exception",
+                  "moodle-core-notification-ajaxexception",
+                ],
+              },
+              "moodle-atto_accessibilitychecker-button": {
+                requires: ["color-base", "moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_accessibilityhelper-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_align-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_bold-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_charmap-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_chemistry-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-core-event",
+                  "io",
+                  "event-valuechange",
+                  "tabview",
+                  "array-extras",
+                ],
+              },
+              "moodle-atto_clear-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_collapse-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_emojipicker-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_emoticon-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_equation-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-core-event",
+                  "io",
+                  "event-valuechange",
+                  "tabview",
+                  "array-extras",
+                ],
+              },
+              "moodle-atto_h5p-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_html-beautify": {},
+              "moodle-atto_html-codemirror": {
+                requires: ["moodle-atto_html-codemirror-skin"],
+              },
+              "moodle-atto_html-button": {
+                requires: [
+                  "promise",
+                  "moodle-editor_atto-plugin",
+                  "moodle-atto_html-beautify",
+                  "moodle-atto_html-codemirror",
+                  "event-valuechange",
+                ],
+              },
+              "moodle-atto_image-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_indent-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_italic-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_link-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_managefiles-usedfiles": {
+                requires: ["node", "escape"],
+              },
+              "moodle-atto_managefiles-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_media-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-form-shortforms",
+                ],
+              },
+              "moodle-atto_noautolink-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_orderedlist-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_recordrtc-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-atto_recordrtc-recording",
+                ],
+              },
+              "moodle-atto_recordrtc-recording": {
+                requires: ["moodle-atto_recordrtc-button"],
+              },
+              "moodle-atto_rtl-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_strike-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_subscript-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_superscript-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_table-button": {
+                requires: [
+                  "moodle-editor_atto-plugin",
+                  "moodle-editor_atto-menu",
+                  "event",
+                  "event-valuechange",
+                ],
+              },
+              "moodle-atto_title-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_underline-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_undo-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_unorderedlist-button": {
+                requires: ["moodle-editor_atto-plugin"],
+              },
+              "moodle-atto_wiris-button": {
+                requires: ["moodle-editor_atto-plugin", "get"],
+              },
+              "moodle-tinymce_mathslate-textool": {
+                requires: ["dd-drag", "dd-proxy", "dd-drop", "event", "json"],
+              },
+              "moodle-tinymce_mathslate-dialogue": {
+                requires: [
+                  "escape",
+                  "moodle-local_mathslate-editor",
+                  "moodle-tinymce_mathslate-editor",
+                ],
+              },
+              "moodle-tinymce_mathslate-snippeteditor": { requires: ["json"] },
+              "moodle-tinymce_mathslate-editor": {
+                requires: [
+                  "dd-drag",
+                  "dd-proxy",
+                  "dd-drop",
+                  "event",
+                  "tabview",
+                  "io-base",
+                  "json",
+                  "moodle-tinymce_mathslate-textool",
+                  "moodle-tinymce_mathslate-mathjaxeditor",
+                ],
+              },
+              "moodle-tinymce_mathslate-mathjaxeditor": {
+                requires: ["moodle-tinymce_mathslate-snippeteditor", "dd-drop"],
+              },
+            },
+          },
+          gallery: {
+            name: "gallery",
+            base: "https:\/\/lasallepalencia.sallenet.org\/lib\/yuilib\/gallery\/",
+            combine: true,
+            comboBase:
+              "https:\/\/lasallepalencia.sallenet.org\/theme\/yui_combo.php?",
+            ext: false,
+            root: "gallery\/1732120578\/",
+            patterns: { "gallery-": { group: "gallery" } },
+          },
+        },
+        modules: {
+          core_filepicker: {
+            name: "core_filepicker",
+            fullpath:
+              "https:\/\/lasallepalencia.sallenet.org\/lib\/javascript.php\/1732120578\/repository\/filepicker.js",
+            requires: [
+              "base",
+              "node",
+              "node-event-simulate",
+              "json",
+              "async-queue",
+              "io-base",
+              "io-upload-iframe",
+              "io-form",
+              "yui2-treeview",
+              "panel",
+              "cookie",
+              "datatable",
+              "datatable-sort",
+              "resize-plugin",
+              "dd-plugin",
+              "escape",
+              "moodle-core_filepicker",
+              "moodle-core-notification-dialogue",
+            ],
+          },
+          core_comment: {
+            name: "core_comment",
+            fullpath:
+              "https:\/\/lasallepalencia.sallenet.org\/lib\/javascript.php\/1732120578\/comment\/comment.js",
+            requires: [
+              "base",
+              "io-base",
+              "node",
+              "json",
+              "yui2-animation",
+              "overlay",
+              "escape",
+            ],
+          },
+          mathjax: {
+            name: "mathjax",
+            fullpath:
+              "https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured",
+          },
+        },
+      };
+      M.yui.loader = { modules: {} };
+
+      //]]>
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body
+    id="page-login-index"
+    class="format-site path-login chrome dir-ltr lang-es yui-skin-sam yui3-skin-sam lasallepalencia-sallenet-org pagelayout-login course-1 context-1"
+  >
+    <div id="page-wrapper">
+      <div>
+        <a class="sr-only sr-only-focusable" href="#maincontent"
+          >Salta al contenido principal</a
+        >
+      </div>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/lib/polyfills/polyfill.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/lib/javascript-static.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/theme/javascript.php/sallenetboost/1732120577/head"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/lib/jquery/jquery-3.6.1.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/lib/jquery/ui-1.13.2/jquery-ui.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/mod/sallenet/js/script.js?sitekey"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/js/bootstrap-datetimepicker.min.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/js/bootstrap-clockpicker.min.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/recursos/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/js/chosen.jquery.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/js/select2.min.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/calendario/js/pick-a-color-1.1.8.min.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/calendario/js/tinycolor-0.9.15.min.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/calendario/components/underscore/underscore-min.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/modulos/_js/extraescolar2024170401.js"></script>
+      <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/modulos/_js/calidad.js"></script>
+      <script>
+        //<![CDATA[
+        document.body.className += " jsenabled";
+        //]]>
+      </script>
+
+      <div id="page" class="container-fluid mt-0">
+        <div id="page-content" class="row">
+          <div id="region-main-box" class="col-12">
+            <section id="region-main-login" class="col-12">
+              <span class="notifications" id="user-notifications"></span>
+              <div role="main">
+                <span id="maincontent"></span>
+                <div class="box py-3 generalbox py-3">
+                  <div
+                    role="alertdialog"
+                    aria-labelledby="modal-header"
+                    aria-describedby="modal-body"
+                    aria-modal="true"
+                    id="notice"
+                    class="box py-3 generalbox modal modal-dialog modal-in-page show py-3"
+                  >
+                    <div id="modal-content" class="box py-3 modal-content py-3">
+                      <div
+                        id="modal-header"
+                        class="box py-3 modal-header px-3 py-3"
+                      >
+                        <h4>Confirmar</h4>
+                      </div>
+                      <div
+                        role="alert"
+                        data-aria-autofocus="true"
+                        id="modal-body"
+                        class="box py-3 modal-body py-3"
+                      >
+                        <p>
+                          Actualmente ha iniciado sesión como Darío Miguel
+                          Navarro, necesita salir antes de volver a entrar con
+                          un usuario diferente.
+                        </p>
+                      </div>
+                      <div id="modal-footer" class="box py-3 modal-footer py-3">
+                        <div class="buttons">
+                          <div class="singlebutton">
+                            <form
+                              method="get"
+                              action="https://lasallepalencia.sallenet.org/"
+                            >
+                              <button
+                                type="submit"
+                                class="btn btn-secondary"
+                                id="single_button673f0e73403003"
+                              >
+                                Cancelar
+                              </button>
+                            </form>
+                          </div>
+                          <div class="singlebutton">
+                            <form
+                              method="post"
+                              action="https://lasallepalencia.sallenet.org/login/logout.php"
+                            >
+                              <input
+                                type="hidden"
+                                name="sesskey"
+                                value="NyIRWeCACe"
+                              />
+                              <input type="hidden" name="loginpage" value="1" />
+                              <button
+                                type="submit"
+                                class="btn btn-primary"
+                                id="single_button673f0e73403004"
+                              >
+                                Cerrar sesión
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+      <div class="container">
+        <div class="tool_dataprivacy">
+          <a
+            href="https://lasallepalencia.sallenet.org/admin/tool/dataprivacy/summary.php"
+            >Resumen de retención de datos</a
+          >
+        </div>
+        <div
+          class="policies-consent tool_gdpr_plus"
+          id="gdpr-plus-673f0e73457f9673f0e73403002"
+        >
+          <div class="policy-container bg-dark text-light">
+            <div class="banner p-2 d-flex flex-column text-center">
+              <div class="description p-1">
+                Si quiere continuar navegando en el sitio, tiene que aceptar
+                algunas de nuestras políticas.
+              </div>
+              <div class="policy_buttons tool_gdpr_plus buttons">
+                <button
+                  class="btn-secondary tool_gdpr_plus_action"
+                  data-action="reject-nonessential"
+                >
+                  Rechazar las no esenciales
+                </button>
+                <button
+                  class="btn-secondary tool_gdpr_plus_action"
+                  data-action="accept-all"
+                >
+                  Aceptar todas
+                </button>
+                <button
+                  class="btn-primary"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#gdpr-plus-settings-673f0e73457f9673f0e73403002"
+                  aria-expanded="false"
+                  aria-controls="gdpr-plus-settings-673f0e73457f9673f0e73403002"
+                >
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  Ver Ajustes
+                </button>
+              </div>
+              <div
+                class="policies-settings-container collapse text-dark pt-3"
+                id="gdpr-plus-settings-673f0e73457f9673f0e73403002"
+              >
+                <div class="card card-body policies-categories d-flex">
+                  <h5 class="text-left">Obligatoria</h5>
+                  <ul class="list-unstyled text-left m-3">
+                    <li class="custom-control custom-switch">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input policy-checkbox"
+                        name="políticas-generales-de-cookies"
+                        id="cat-673f0e73457f9673f0e73403002-3"
+                        data-id="3"
+                        checked
+                        data-mandatory="1"
+                        disabled
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="cat-673f0e73457f9673f0e73403002-3"
+                      >
+                        <a
+                          class="text-dark"
+                          href="https://lasallepalencia.sallenet.org/admin/tool/gdpr_plus/view.php?versionid=3&amp;returnurl=https%3A%2F%2Flasallepalencia.sallenet.org%2Flogin%2Findex.php"
+                          data-action="view-guest"
+                          data-versionid="3"
+                          data-behalfid="1"
+                          data-name="políticas-generales-de-cookies"
+                        >
+                          Políticas generales de cookies
+                        </a>
+                      </label>
+                    </li>
+
+                    <li class="custom-control custom-switch">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input policy-checkbox"
+                        name="cookies-de-google-analytics"
+                        id="cat-673f0e73457f9673f0e73403002-6"
+                        data-id="6"
+                        checked
+                        data-mandatory="1"
+                        disabled
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="cat-673f0e73457f9673f0e73403002-6"
+                      >
+                        <a
+                          class="text-dark"
+                          href="https://lasallepalencia.sallenet.org/admin/tool/gdpr_plus/view.php?versionid=6&amp;returnurl=https%3A%2F%2Flasallepalencia.sallenet.org%2Flogin%2Findex.php"
+                          data-action="view-guest"
+                          data-versionid="6"
+                          data-behalfid="1"
+                          data-name="cookies-de-google-analytics"
+                        >
+                          Cookies de Google Analytics
+                        </a>
+                      </label>
+                    </li>
+
+                    <li class="custom-control custom-switch">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input policy-checkbox"
+                        name="cookies-de-google"
+                        id="cat-673f0e73457f9673f0e73403002-7"
+                        data-id="7"
+                        checked
+                        data-mandatory="1"
+                        disabled
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="cat-673f0e73457f9673f0e73403002-7"
+                      >
+                        <a
+                          class="text-dark"
+                          href="https://lasallepalencia.sallenet.org/admin/tool/gdpr_plus/view.php?versionid=7&amp;returnurl=https%3A%2F%2Flasallepalencia.sallenet.org%2Flogin%2Findex.php"
+                          data-action="view-guest"
+                          data-versionid="7"
+                          data-behalfid="1"
+                          data-name="cookies-de-google"
+                        >
+                          Cookies de Google
+                        </a>
+                      </label>
+                    </li>
+
+                    <li class="custom-control custom-switch">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input policy-checkbox"
+                        name="cookies-de-moodle"
+                        id="cat-673f0e73457f9673f0e73403002-8"
+                        data-id="8"
+                        checked
+                        data-mandatory="1"
+                        disabled
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="cat-673f0e73457f9673f0e73403002-8"
+                      >
+                        <a
+                          class="text-dark"
+                          href="https://lasallepalencia.sallenet.org/admin/tool/gdpr_plus/view.php?versionid=8&amp;returnurl=https%3A%2F%2Flasallepalencia.sallenet.org%2Flogin%2Findex.php"
+                          data-action="view-guest"
+                          data-versionid="8"
+                          data-behalfid="1"
+                          data-name="cookies-de-moodle"
+                        >
+                          Cookies de Moodle
+                        </a>
+                      </label>
+                    </li>
+                  </ul>
+                  <h5 class="text-left">Opcional</h5>
+                  <ul class="list-unstyled text-left m-3">
+                    <li class="custom-control custom-switch">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input policy-checkbox"
+                        name="política-de-privacidad"
+                        id="cat-673f0e73457f9673f0e73403002-11"
+                        data-id="11"
+                        checked
+                        data-mandatory="0"
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="cat-673f0e73457f9673f0e73403002-11"
+                      >
+                        <a
+                          class="text-dark"
+                          href="https://lasallepalencia.sallenet.org/admin/tool/gdpr_plus/view.php?versionid=11&amp;returnurl=https%3A%2F%2Flasallepalencia.sallenet.org%2Flogin%2Findex.php"
+                          data-action="view-guest"
+                          data-versionid="11"
+                          data-behalfid="1"
+                          data-name="política-de-privacidad"
+                        >
+                          Política de privacidad
+                        </a>
+                      </label>
+                    </li>
+
+                    <li class="custom-control custom-switch">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input policy-checkbox"
+                        name="aviso-legal"
+                        id="cat-673f0e73457f9673f0e73403002-12"
+                        data-id="12"
+                        checked
+                        data-mandatory="0"
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="cat-673f0e73457f9673f0e73403002-12"
+                      >
+                        <a
+                          class="text-dark"
+                          href="https://lasallepalencia.sallenet.org/admin/tool/gdpr_plus/view.php?versionid=12&amp;returnurl=https%3A%2F%2Flasallepalencia.sallenet.org%2Flogin%2Findex.php"
+                          data-action="view-guest"
+                          data-versionid="12"
+                          data-behalfid="1"
+                          data-name="aviso-legal"
+                        >
+                          Aviso legal
+                        </a>
+                      </label>
+                    </li>
+                  </ul>
+                  <button
+                    class="btn-secondary align-self-end tool_gdpr_plus_action"
+                    data-action="accept-selected"
+                  >
+                    Guardar mi selección
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="show-popup" role="button">
+            Mostrar el Banner de Políticas
+          </a>
+        </div>
+        <div class="policiesfooter">
+          <a
+            href="https://lasallepalencia.sallenet.org/admin/tool/policy/viewall.php?returnurl=https%3A%2F%2Flasallepalencia.sallenet.org%2Flogin%2Findex.php"
+            >Políticas</a
+          >
+        </div>
+        <script>
+          //<![CDATA[
+          var require = {
+            baseUrl:
+              "https://lasallepalencia.sallenet.org/lib/requirejs.php/1732120578/",
+            // We only support AMD modules with an explicit define() statement.
+            enforceDefine: true,
+            skipDataMain: true,
+            waitSeconds: 0,
+
+            paths: {
+              jquery:
+                "https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/lib/jquery/jquery-3.6.1.min",
+              jqueryui:
+                "https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/lib/jquery/ui-1.13.2/jquery-ui.min",
+              jqueryprivate:
+                "https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/lib/requirejs/jquery-private",
+            },
+
+            // Custom jquery config map.
+            map: {
+              // '*' means all modules will get 'jqueryprivate'
+              // for their 'jquery' dependency.
+              "*": { jquery: "jqueryprivate" },
+              // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+              "*": { process: "core/first" },
+
+              // 'jquery-private' wants the real jQuery module
+              // though. If this line was not here, there would
+              // be an unresolvable cyclic dependency.
+              jqueryprivate: { jquery: "jquery" },
+            },
+          };
+
+          //]]>
+        </script>
+        <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/lib/requirejs/require.min.js"></script>
+        <script>
+          //<![CDATA[
+          M.util.js_pending("core/first");
+          require(["core/first"], function () {
+            require(["core/prefetch"]);
+            require(["media_videojs/loader"], function (loader) {
+              loader.setUp("es");
+            });
+
+            require([
+              "tool_gdpr_plus/policies-consent-manager",
+              "tool_policy/policyactions",
+            ], function (PoliciesConsentManager, Actions) {
+              // Get localised messages.
+              var continuemessage = "Continuar";
+              // Do not display within in all H5P or other embedded iframes.
+              if (window.location === window.parent.location) {
+                var cc = new PoliciesConsentManager({
+                  containerId: "gdpr-plus-673f0e73457f9673f0e73403002",
+                  policyAgreed: 1,
+                });
+              }
+            });
+            require(["theme_boost/loader"]);
+            M.util.js_pending("core/notification");
+            require(["core/notification"], function (amd) {
+              amd.init(1, []);
+              M.util.js_complete("core/notification");
+            });
+            M.util.js_pending("core/log");
+            require(["core/log"], function (amd) {
+              amd.setConfig({ level: "warn" });
+              M.util.js_complete("core/log");
+            });
+            M.util.js_pending("core/page_global");
+            require(["core/page_global"], function (amd) {
+              amd.init();
+              M.util.js_complete("core/page_global");
+            });
+            M.util.js_pending("core/utility");
+            require(["core/utility"], function (amd) {
+              M.util.js_complete("core/utility");
+            });
+            M.util.js_pending("core/storage_validation");
+            require(["core/storage_validation"], function (amd) {
+              amd.init(1732185708);
+              M.util.js_complete("core/storage_validation");
+            });
+            M.util.js_complete("core/first");
+          });
+          //]]>
+        </script>
+        <script src="https://lasallepalencia.sallenet.org/lib/javascript.php/1732120578/mod/sallenet/js/tinymce/tinymce.min.js"></script>
+        <script>
+          //<![CDATA[
+          M.str = {
+            moodle: {
+              lastmodified: "\u00daltima modificaci\u00f3n",
+              name: "Nombre",
+              error: "Error",
+              info: "Informaci\u00f3n",
+              yes: "S\u00ed",
+              no: "No",
+              cancel: "Cancelar",
+              confirm: "Confirmar",
+              areyousure: "\u00bfEst\u00e1 seguro?",
+              closebuttontitle: "Cerrar",
+              unknownerror: "Error desconocido",
+              file: "Archivo",
+              url: "URL",
+              collapseall: "Colapsar todo",
+              expandall: "Expandir todo",
+            },
+            repository: {
+              type: "Tipo",
+              size: "Tama\u00f1o",
+              invalidjson: "Cadena JSON no v\u00e1lida",
+              nofilesattached: "No se han adjuntado archivos",
+              filepicker: "Selector de archivos",
+              logout: "Salir",
+              nofilesavailable: "No hay archivos disponibles",
+              norepositoriesavailable:
+                "Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos en el formato solicitado.",
+              fileexistsdialogheader: "El archivo existe",
+              fileexistsdialog_editor:
+                "Un archivo con ese nombre ha sido anexado al texto que Usted est\u00e1 editando",
+              fileexistsdialog_filemanager:
+                "Ya ha sido anexado un archivo con ese nombre",
+              renameto: 'Cambiar el nombre a "{$a}"',
+              referencesexist: "Existen {$a} enlaces a este archivo",
+              select: "Seleccionar",
+            },
+            admin: {
+              confirmdeletecomments:
+                "Est\u00e1 a punto de eliminar comentarios, \u00bfest\u00e1 seguro?",
+              confirmation: "Confirmaci\u00f3n",
+            },
+            debug: {
+              debuginfo: "Informaci\u00f3n de depuraci\u00f3n",
+              line: "L\u00ednea",
+              stacktrace: "Trazado de la pila (stack)",
+            },
+            langconfig: { labelsep: ":" },
+          };
+          //]]>
+        </script>
+        <script>
+          //<![CDATA[
+          (function () {
+            Y.use("moodle-filter_mathjaxloader-loader", function () {
+              M.filter_mathjaxloader.configure({
+                mathjaxconfig:
+                  'MathJax.Hub.Config({\r\nconfig: ["Accessible.js", "Safe.js"],\r\nerrorSettings: { message: ["!"] },\r\nTeX: { extensions: ["AMSmath.js","AMSsymbols.js","mhchem.js","noErrors.js","noUndefined.js"] },\r\nskipStartupTypeset: true,\r\nmessageStyle: "none"\r\n});',
+                lang: "es",
+              });
+            });
+            M.util.help_popups.setup(Y);
+            M.util.js_pending("random673f0e73403005");
+            Y.on("domready", function () {
+              M.util.js_complete("init");
+              M.util.js_complete("random673f0e73403005");
+            });
+          })();
+          //]]>
+        </script>
+      </div>
+    </footer>
+  </body>
+</html>
